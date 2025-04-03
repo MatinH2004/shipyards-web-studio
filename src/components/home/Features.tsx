@@ -36,7 +36,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="pt-20 bg-black text-white">
+    <section id="features" className="pt-20 text-white">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-2xl md:text-3xl font-medium text-gray-400">What We Do</h2>
         
