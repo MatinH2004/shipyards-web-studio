@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <section className="h-screen flex flex-col md:flex-row items-center justify-center bg-black text-white px-6 md:px-16 text-center md:text-left">
+    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-black text-white px-6 md:px-16 text-center md:text-left pt-20 md:pt-0">
       <div className="w-full md:w-1/2">
         <h1 className="text-4xl md:text-5xl font-bold leading-tight">
           Your Website is Costing You Customers — Let&apos;s Fix That.
