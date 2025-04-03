@@ -24,7 +24,7 @@ export default function Hero() {
       
       <div className="w-full md:w-1/2 flex justify-center mt-10 md:mt-0">
         <Image
-          src="/building-web.svg"
+          src="/images/building-web.svg"
           alt="Hero Image"
           width={500}
           height={500}
