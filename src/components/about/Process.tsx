@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const steps = [
   {
@@ -21,6 +22,16 @@ const steps = [
 export default function Process() {
   return (
     <section className="py-24 px-6 bg-black">
+      <div>
+        <Image 
+          src="/images/progress.svg" 
+          alt="Ship Your Website" 
+          width={600} 
+          height={300}
+          className="mx-auto my-10"
+        />
+      </div>
+
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-center gap-12 text-center md:text-left">
           <div>
