@@ -55,7 +55,7 @@ export default function About() {
             >
               Launch School&apos;s
             </Link>
-            &nbsp;rigorous software engineering program, where I spent over three years learning 
+            &nbsp;rigorous software engineering program, where I spent over two years mastering 
             the fundamentals: from building databases and understanding internet protocols, to 
             designing front-end interfaces and building full-stack applications from the ground up. 
           </p>
