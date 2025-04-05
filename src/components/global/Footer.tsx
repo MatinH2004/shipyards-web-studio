@@ -50,7 +50,7 @@ export default function Footer() {
             <li className="font-bold uppercase mb-2 text-gray-300">Contact</li>
             <li className="flex items-center gap-2">
               <Phone size={20} className="text-gray-400" />
-              <Link href="tel:123-456-7890" className="text-gray-400 hover:text-white transition">
+              <Link href="tel:778-323-4696" className="text-gray-400 hover:text-white transition">
                 (778) 323-4696
               </Link>
             </li>
