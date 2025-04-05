@@ -6,15 +6,33 @@ export default function About() {
     <section>
       <h1 className="text-center text-white text-5xl font-bold pt-20">About Us</h1>
       <div className="max-w-7xl mx-auto px-6 md:px-12 pt-16 flex flex-col md:flex-row items-center gap-12">
-        <div className="w-full md:w-1/2 flex justify-center">
-          <Image
-            src="/images/matin.png"
-            alt="Matin Hassanpour"
-            width={450}
-            height={450}
-            className="rounded-lg shadow-lg"
-          />
-        </div>
+      <div className="w-full md:w-2/3 lg:w-1/2 relative flex justify-center">
+        <Image
+          src="/images/sunset.jpg"
+          alt="Sunset at Shipyards"
+          width={800}
+          height={800}
+          className="hidden md:block absolute top-[-170px] left-[-150px] w-64 md:w-80 lg:w-96 rounded-lg z-0"
+        />
+
+        <Image
+          src="/images/twinfalls.jpg"
+          alt="Twin Falls | Lynn Canyon"
+          width={800}
+          height={800}
+          className="hidden md:block absolute bottom-[-200px] left-[-100px] w-64 md:w-80 lg:w-96 rounded-lg z-0"
+        />
+
+        <Image
+          src="/images/matin.jpg"
+          alt="Matin Hassan Pour | #1 Web Designer | North Vancouver, BC, Canada"
+          width={800}
+          height={500}
+          className="relative z-10 rounded-3xl shadow-xl"
+          priority
+        />
+      </div>
+
 
         <div className="w-full md:w-1/2 text-center md:text-left">
           <h2 className="text-xl md:text-2xl font-medium text-gray-400 font-semibold tracking-wide">
