@@ -38,6 +38,7 @@ export default function About() {
           <h2 className="text-xl md:text-2xl font-medium text-gray-400 font-semibold tracking-wide">
             Shipyards Web Studio
           </h2>
+
           <div className="mx-auto md:mx-0">
             <p className="text-4xl font-bold mt-2 leading-tight text-white max-w-lg">
               We Make Websites With Purpose & Intent
@@ -45,19 +46,24 @@ export default function About() {
           </div>
 
           <p className="mt-6 text-gray-400 text-lg leading-relaxed">
-            My name is Matin, and I am the owner and lead developer of Shipyards Web Studio. 
-            I got into programming after graduating from high school. Over the course of three years, I enrolled in&nbsp;
+            Hi, I&apos;m Matin — founder and lead developer at Shipyards Web Studio. My journey 
+            into web development started right after high school. I enrolled in&nbsp;
             <Link
-              href="https://launchschool.com" 
-              className="underline hover:text-red-400" 
+              href="https://launchschool.com"
+              className="underline hover:text-red-400"
               target="_blank"
             >
               Launch School&apos;s
             </Link>
-            &nbsp;software engineering program and learned everything from creating databases, DSA, 
-            the internet and its protocols, back-end servers, front-end design, and building full-stack
-            applications from scratch. With these skills, I started reaching out to small businesses to 
-            offer my help, and I have been growing every year since 2023.
+            &nbsp;rigorous software engineering program, where I spent over three years learning 
+            the fundamentals: from building databases and understanding internet protocols, to 
+            designing front-end interfaces and building full-stack applications from the ground up. 
+          </p>
+
+          <p className="mt-4 text-gray-400 text-lg leading-relaxed">
+            With that foundation, I began working one-on-one with small businesses in my community. 
+            What started as freelance work has since grown into a full-fledged web design company 
+            dedicated to helping local businesses thrive online.
           </p>
 
           <p className="mt-4 text-gray-400 text-lg leading-relaxed">
