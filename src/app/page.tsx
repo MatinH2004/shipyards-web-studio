@@ -3,7 +3,7 @@ import Navbar from "@/components/global/Navbar";
 import Features from "@/components/home/Features";
 import Offer from "@/components/home/Offer";
 import Portfolio from "@/components/home/Portfolio";
-import Pricing from "@/components/home/Pricing";
+import Pricing from "@/components/global/Pricing";
 import Footer from "@/components/global/Footer";
 
 export default function HomePage() {
