@@ -55,7 +55,7 @@ export default function Process() {
         {steps.map((step, index) => (
           <div
             key={index}
-            className="bg-gray-900 p-8 rounded-xl shadow-md hover:shadow-blue-500/20 transition-transform duration-300 transform hover:-translate-y-4"
+            className="bg-gray-900 p-8 rounded-xl shadow-md hover:shadow-blue-500/20 transition-transform duration-300 hover:-translate-y-4"
           >
             <p className="text-blue-500 font-semibold mb-2">{step.name}</p>
             <h3 className="text-2xl font-bold text-white mb-2">{step.title}</h3>
