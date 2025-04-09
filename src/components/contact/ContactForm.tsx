@@ -53,7 +53,7 @@ export default function ContactForm() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
-            className="w-full p-2 border border-gray-300 rounded-md"
+            className="w-full p-2 border border-gray-300 rounded-md text-white"
           />
         </div>
 
@@ -68,7 +68,7 @@ export default function ContactForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="w-full p-2 border border-gray-300 rounded-md"
+            className="w-full p-2 border border-gray-300 rounded-md text-white"
           />
         </div>
 
@@ -82,10 +82,10 @@ export default function ContactForm() {
             value={reason}
             onChange={(e) => setReason(e.target.value)}
             required
-            className="w-full mt-1 p-2 border border-gray-300 rounded-md bg-black appearance-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 cursor-pointer"
+            className="w-full mt-1 p-2 border border-gray-300 text-white rounded-md bg-black appearance-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 cursor-pointer"
           >
-            <option value="Book Appointment">Book an appointment</option>
-            <option value="Ask Question">Ask a question</option>
+            <option value="Book Appointment">Book Appointment</option>
+            <option value="Ask Question">Ask Question</option>
             <option value="Other">Other</option>
           </select>
         </div>
@@ -100,7 +100,7 @@ export default function ContactForm() {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
-            className="w-full p-2 border border-gray-300 rounded-md h-32"
+            className="w-full p-2 border border-gray-300 rounded-md h-32 text-white"
           ></textarea>
         </div>
 
