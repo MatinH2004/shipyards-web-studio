@@ -6,7 +6,7 @@ import { useState } from 'react';
 export default function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [reason, setReason] = useState("Ask a question");
+  const [reason, setReason] = useState("Book Appointment");
   const [message, setMessage] = useState('');
   const [status, setStatus] = useState('');
   const [loading, setLoading] = useState(false);
@@ -27,7 +27,7 @@ export default function ContactForm() {
       setStatus('Message sent successfully!');
       setName('');
       setEmail('');
-      setReason('Ask a question');
+      setReason('Book Appointment');
       setMessage('');
     } catch (err) {
       console.error('FAILED...', err);
