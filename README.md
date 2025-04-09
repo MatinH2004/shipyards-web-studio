@@ -22,4 +22,4 @@ This is a professional, modern website built with **Next.js** and **Tailwind CSS
 
 ## 🌎 Live Site
 
-**Checkout the website at 👉 [www.shipyardswebstudio.com](www.shipyardswebstudio.com)
+**Checkout the website at 👉 [www.shipyardswebstudio.com](https://www.shipyardswebstudio.com)
