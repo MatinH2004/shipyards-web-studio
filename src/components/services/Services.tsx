@@ -5,7 +5,7 @@ export default function Services() {
   return (
     <section className="max-w-6xl mx-auto px-6 mt-10 text-white space-y-12">
       <div className="text-center">
-        <p className="text-2xl md:text-3xl font-medium text-gray-400">We do it all</p>
+        <p className="text-2xl md:text-3xl font-medium text-gray-400">Done For You</p>
         <h1 className="text-4xl md:text-5xl max-w-2xl mx-auto font-bold mt-2">
           Professional Web Design &amp; Development Services
         </h1>
