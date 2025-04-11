@@ -38,9 +38,9 @@ export default function Features() {
   return (
     <section id="features" className="pt-20 text-white">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="text-2xl md:text-3xl font-medium text-gray-400">What We Do</h2>
+        <p className="text-2xl md:text-3xl font-medium text-gray-400">What We Do</p>
         
-        <p className="text-4xl md:text-5xl max-w-xl mx-auto font-bold text-white mt-2">Never worry about your website again</p>
+        <h2 className="text-4xl md:text-5xl max-w-xl mx-auto font-bold text-white mt-2">Never worry about your website again</h2>
 
         <p className="mt-6 text-lg md:text-xl text-gray-400">
           Every line of code is written by hand to ensure the best performance and make Google happy, which helps bring in more customers to your site and bring more revenue to your business.

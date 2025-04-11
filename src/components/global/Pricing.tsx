@@ -36,10 +36,12 @@ export default function Pricing() {
   return (
     <section className="py-20 text-white">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="text-2xl md:text-3xl font-medium text-gray-400">Our Pricing</h2>
-        <p className="text-4xl md:text-5xl font-bold text-white mt-2 mx-auto max-w-3xl">
+        <p className="text-2xl md:text-3xl font-medium text-gray-400">Our Pricing</p>
+
+        <h2 className="text-4xl md:text-5xl font-bold text-white mt-2 mx-auto max-w-3xl">
           Pricing Packages For Every Budget
-        </p>
+        </h2>
+        
         <p className="mt-6 text-lg md:text-xl text-gray-400">
           We have worked with clients all over Canada for home service contractors, fitness coaches, startups, trainers, wellness centers, and more.
           No matter what your business is, we can build a website that is effective, beautiful, performant, and tailored to your industry.
