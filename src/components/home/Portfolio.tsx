@@ -18,7 +18,7 @@ const portfolioItems = [
     name: 'Jackie Mitchell Physio',
     description: 'Expert physiotherapist in North Vancouver, offering personalized treatments for pain relief and recovery.',
     image: '/images/jackiemitchellphysio.png',
-    link: 'http://jackie-mitchell-physio.vercel.app', 
+    link: 'https://jackiemitchellphysio.com',
   },
 ];
 
