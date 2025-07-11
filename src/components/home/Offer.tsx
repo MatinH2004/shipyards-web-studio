@@ -54,7 +54,7 @@ export default function Offer() {
       </div>
 
       <div className="flex justify-center items-center mt-10">
-        <Link href="/contact" className="bg-white hover:bg-gray-200 text-black font-semibold py-3 px-6 rounded-lg text-lg transition hover:shadow-2xl hover:shadow-blue-500 hover:text-xl">
+        <Link href="/contact" className="bg-white text-black font-semibold py-3 px-6 rounded-lg text-lg transition hover:bg-gray-300 hover:shadow-2xl hover:shadow-blue-500">
           Schedule A Call
         </Link>
       </div>
