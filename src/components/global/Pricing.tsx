@@ -72,7 +72,7 @@ export default function Pricing() {
                   <p className="text-4xl font-bold text-white">{pkg.price}</p>
                   <p className="text-gray-400 text-sm">{pkg.extra}</p>
                 </div>
-                <Link href="/contact" className="bg-white hover:bg-gray-200 text-black font-semibold py-3 px-6 rounded-lg text-lg transition hover:shadow-2xl hover:shadow-blue-500 hover:text-xl">
+                <Link href="/contact" className="border border-gray-600 text-gray-300 hover:text-white font-semibold py-3 px-6 rounded-lg text-lg transition hover:shadow-2xl hover:shadow-white">
                   Get Started
                 </Link>
               </div>

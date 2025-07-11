@@ -54,7 +54,7 @@ export default function Portfolio() {
               <Link
                 href={item.link}
                 target="_blank"
-                className="mt-4 inline-block bg-white hover:bg-gray-200 text-black font-semibold py-3 px-6 rounded-lg text-lg transition transition hover:shadow-2xl hover:shadow-blue-500"
+                className="mt-4 inline-block border border-gray-600 text-gray-300 hover:text-white font-semibold py-3 px-6 rounded-lg text-lg transition hover:shadow-2xl hover:shadow-white"
               >
                 Visit Website
               </Link>
