@@ -72,7 +72,7 @@ export default function About() {
             advantage of and ended up with a terrible website. They either couldn&apos;t afford 
             a good website, or if they could, they didn&apos;t know who to trust. So I tweaked 
             my business model to fit their needs. That&apos;s how I came up with my $0 down and 
-            $199 a month model—more manageable for a small business and easier on their budget.
+            $149 a month model—more manageable for a small business and easier on their budget.
           </p>
         </div>
       </div>
