@@ -59,6 +59,19 @@ export default function RootLayout({
             }
           })
         }} />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Shipyards Web Studio" />
+        <meta property="og:description" content="We build beautiful, effective websites for local businesses." />
+        <meta property="og:image" content="https://shipyardswebstudio.com/og-image.jpg" />
+        <meta property="og:url" content="https://shipyardswebstudio.com" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Shipyards Web Studio" />
+        <meta name="twitter:description" content="We build beautiful, effective websites for local businesses." />
+        <meta name="twitter:image" content="https://shipyardswebstudio.com/og-image.jpg" />
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
