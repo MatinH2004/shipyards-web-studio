@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Head from "next/head";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/global/Navbar";
@@ -16,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Shipyards Web Studio",
-  description: "Small Business Web Designer | Vancouver, BC, Canada",
+  description: "We create stunning websites for small businesses that build trust and get more clients. Based in North Vancouver.",
   icons: {
     icon: [
       { url: '/favicon/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
@@ -36,6 +37,29 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Shipyards Web Studio",
+            "url": "https://shipyardswebstudio.com",
+            "logo": "https://shipyardswebstudio.com/logo.png",
+            "description": "Web design studio in North Vancouver that builds trust-building websites for local service businesses.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "North Vancouver",
+              "addressRegion": "BC",
+              "addressCountry": "CA"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+1-778-323-4696",
+              "contactType": "Customer Service"
+            }
+          })
+        }} />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
       >
