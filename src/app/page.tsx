@@ -2,6 +2,7 @@ import Hero from "@/components/home/Hero";
 import Features from "@/components/home/Features";
 import Offer from "@/components/home/Offer";
 import Portfolio from "@/components/home/Portfolio";
+import Testimonials from "@/components/home/Testimonials";
 import Pricing from "@/components/global/Pricing";
 
 export default function HomePage() {
@@ -11,6 +12,7 @@ export default function HomePage() {
       <Features />
       <Offer />
       <Portfolio />
+      <Testimonials />
       <Pricing />
     </>
   );
