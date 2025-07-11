@@ -12,7 +12,7 @@ const pricingPackages = [
       "+$30/mo Hosting",
       "+$50/mo Unlimited Edits Add-on",
     ],
-    price: "$2499",
+    price: "$1749",
     extra: "+ $30/mo Hosting",
   },
   {
@@ -27,7 +27,7 @@ const pricingPackages = [
       "24/7 Support",
       "Lifetime Updates",
     ],
-    price: "$199",
+    price: "$149",
     extra: "Per Month",
   },
 ];
