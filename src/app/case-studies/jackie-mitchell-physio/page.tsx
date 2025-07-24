@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Hammer, Rocket, Trophy, MessageSquare, Globe } from 'lucide-react';
 
 export default function JackieMitchellPhysioCaseStudy() {
   return (
@@ -22,7 +23,8 @@ export default function JackieMitchellPhysioCaseStudy() {
 
       {/* The Problem Section */}
       <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4 flex items-center">
-        <span className="text-orange-400 mr-3 text-4xl">🚧</span> The Problem
+        {/* Replaced 🚧 with Hammer icon */}
+        <Hammer className="text-orange-400 mr-3 w-10 h-10" /> The Problem
       </h2>
       <p className="text-lg text-gray-300 mb-8 leading-relaxed">
         Jackie Mitchell, a registered physiotherapist, was running an outdated WordPress website that wasn’t mobile-friendly, loaded slowly, and ranked poorly on Google. The design didn’t reflect her professionalism, and it was costing her over $250/year in unnecessary hosting and plugin expenses.
@@ -30,7 +32,8 @@ export default function JackieMitchellPhysioCaseStudy() {
 
       {/* The Solution Section */}
       <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4 flex items-center">
-        <span className="text-green-400 mr-3 text-4xl">🚀</span> The Solution
+        {/* Replaced 🚀 with Rocket icon */}
+        <Rocket className="text-green-400 mr-3 w-10 h-10" /> The Solution
       </h2>
       <p className="text-lg text-gray-300 mb-4 leading-relaxed">
         After a strategic consultation to understand Jackie’s workflows and goals, I designed and developed a custom-built website using Next.js—a modern web framework that delivers speed, performance, and SEO advantages.
@@ -48,7 +51,8 @@ export default function JackieMitchellPhysioCaseStudy() {
 
       {/* The Results Section */}
       <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4 flex items-center">
-        <span className="text-blue-400 mr-3 text-4xl">✅</span> The Results
+        {/* Replaced ✅ with Trophy icon */}
+        <Trophy className="text-yellow-400 mr-3 w-10 h-10" /> The Results
       </h2>
       <ul className="list-disc list-inside text-lg text-gray-300 mb-8 space-y-2 pl-4">
         <li><strong className="text-white">$250+ in annual savings</strong> on web hosting and maintenance</li>
@@ -60,15 +64,20 @@ export default function JackieMitchellPhysioCaseStudy() {
 
       {/* Testimonial Section */}
       <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4 flex items-center">
-        <span className="text-purple-400 mr-3 text-4xl">💬</span> What Jackie Said
+        {/* Replaced 💬 with MessageSquare icon */}
+        <MessageSquare className="text-purple-400 mr-3 w-10 h-10" /> What Jackie Said
       </h2>
       <blockquote className="bg-gray-800 p-6 rounded-lg shadow-lg border-l-4 border-purple-500 italic text-gray-200 mb-8">
-        “The new website has completely changed the way people find and trust my practice. I’ve already had four new clients reach out just a couple of weeks after launch. It’s clean, professional, and does exactly what I need—without the technical headaches.”
+        &quot;Matin helped me redo my website recently and I was very impressed! He was kind, patient and very professional.
+
+        He even helped me save money by recommending that I cancel unnecessary services I no longer needed.
+        I would highly recommend his services to anyone looking for help with their website!&quot;
       </blockquote>
 
       {/* Live Site Link */}
       <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4 flex items-center">
-        <span className="text-yellow-400 mr-3 text-4xl">📍</span> Live Site
+        {/* Replaced 📍 with MapPin icon (or ExternalLink could be an alternative) */}
+        <Globe className="text-gray-400 mr-3 w-10 h-10" /> Live Site
       </h2>
       <p className="text-lg mb-8">
         <Link
