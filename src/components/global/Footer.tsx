@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Anchor, Phone, Mail, MapPin } from "lucide-react";
+import { navItems } from "@/lib/data/navItems";
 
 export default function Footer() {
   return (
@@ -20,29 +21,14 @@ export default function Footer() {
 
         {/* Navigation Links */}
         <div className="flex flex-wrap gap-10">
-          {/* Quick Links */}
           <ul>
-            <li className="font-bold uppercase mb-2 text-gray-300">Quick Links</li>
-            <li>
-              <Link href="/about" className="text-gray-400 hover:text-white transition">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link href="/services" className="text-gray-400 hover:text-white transition">
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link href="/pricing" className="text-gray-400 hover:text-white transition">
-                Pricing
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" className="text-gray-400 hover:text-white transition">
-                Contact
-              </Link>
-            </li>
+            {navItems.map((item) => 
+              <li key={item.label}>
+                <Link href={item.href} className="text-gray-400 hover:text-white transition">
+                  {item.label}
+                </Link>
+              </li> 
+            )}
           </ul>
 
           {/* Contact Info */}
@@ -62,7 +48,7 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2 mt-2">
               <MapPin size={20} className="text-gray-400" />
-              <span className="text-gray-400">
+              <span className="text-gray-400 hover:text-white transition">
                 North Vancouver, BC, Canada
               </span>
             </li>

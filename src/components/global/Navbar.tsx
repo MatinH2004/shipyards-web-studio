@@ -5,24 +5,11 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, X, Anchor } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-
-type NavItem = {
-  href: string;
-  label: string;
-};
+import { navItems } from "@/lib/data/navItems";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
-
-  const navItems: Array<NavItem> = [
-    // { href: "/", label: "Home" },
-    { href: "/services", label: "Services" },
-    { href: "/portfolio", label: "Portfolio"},
-    { href: "/pricing", label: "Pricing" },
-    { href: "/about", label: "About" },
-    { href: "/contact", label: "Contact" },
-  ];
 
   return (
     <header className="sticky top-0 z-50 flex justify-between items-center h-16 px-6 bg-black text-white border-b-1 border-gray-800">
