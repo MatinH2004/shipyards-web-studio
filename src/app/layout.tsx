@@ -28,6 +28,30 @@ export const metadata: Metadata = {
     ],
   },
   manifest: '/favicon/site.webmanifest',
+  // --- START: Open Graph & Twitter Metadata moved here ---
+  openGraph: {
+    title: 'Shipyards Web Studio',
+    description: 'We build beautiful, effective websites for local businesses.',
+    url: 'https://shipyardswebstudio.com',
+    siteName: 'Shipyards Web Studio',
+    images: [
+      {
+        url: 'https://shipyardswebstudio.com/images/og-image.png',
+        width: 1200, // Recommended width for optimal display
+        height: 630, // Recommended height for optimal display
+        alt: 'Shipyards Web Studio Open Graph Image',
+      },
+    ],
+    locale: 'en_CA',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Shipyards Web Studio',
+    description: 'We build beautiful, effective websites for local businesses.',
+    images: ['https://shipyardswebstudio.com/images/og-image.png'],
+  },
+  // --- END: Open Graph & Twitter Metadata ---
 };
 
 export default function RootLayout({
@@ -44,7 +68,9 @@ export default function RootLayout({
             "@type": "LocalBusiness",
             "name": "Shipyards Web Studio",
             "url": "https://shipyardswebstudio.com",
-            "logo": "https://shipyardswebstudio.com/logo.png",
+            // Corrected logo path to public/images/og-image.png
+            // If you get a dedicated logo.png, update this URL accordingly.
+            "logo": "https://shipyardswebstudio.com/images/og-image.png",
             "description": "Web design studio in North Vancouver that builds trust-building websites for local service businesses.",
             "address": {
               "@type": "PostalAddress",
@@ -59,13 +85,6 @@ export default function RootLayout({
             }
           })
         }} />
-
-        {/* Open Graph */}
-        <meta property="og:title" content="Shipyards Web Studio" />
-        <meta property="og:description" content="We build beautiful, effective websites for local businesses." />
-        <meta property="og:image" content="https://shipyardswebstudio.com/og-image.png" />
-        <meta property="og:url" content="https://shipyardswebstudio.com" />
-        <meta property="og:type" content="website" />
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
