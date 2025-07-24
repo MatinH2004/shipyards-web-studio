@@ -1,5 +1,12 @@
 export const portfolio = [
   {
+    name: 'Jackie Mitchell Physio',
+    description: 'Expert physiotherapist in North Vancouver, offering personalized treatments for pain relief and recovery.',
+    image: '/images/jackiemitchellphysio.png',
+    link: 'https://jackiemitchellphysio.com',
+    caseStudyLink: '/case-studies/jackie-mitchell-physio',
+  },
+  {
     name: 'Ganti Construction',
     description: 'Local construction company based in North Vancouver, specializing in residential and commercial projects.',
     image: '/images/ganticonstruction.png',
@@ -12,12 +19,5 @@ export const portfolio = [
     image: '/images/tyronpiteaufitness.png',
     link: 'http://tyron-coaching-web.vercel.app',
     caseStudyLink: '/case-studies/tyron-piteau-fitness',
-  },
-  {
-    name: 'Jackie Mitchell Physio',
-    description: 'Expert physiotherapist in North Vancouver, offering personalized treatments for pain relief and recovery.',
-    image: '/images/jackiemitchellphysio.png',
-    link: 'https://jackiemitchellphysio.com',
-    caseStudyLink: '/case-studies/jackie-mitchell-physio',
   },
 ];

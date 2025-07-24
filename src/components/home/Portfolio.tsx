@@ -1,26 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
-const portfolioItems = [
-  {
-    name: 'Ganti Construction',
-    description: 'Local construction company based in North Vancouver, specializing in residential and commercial projects.',
-    image: '/images/ganticonstruction.png',
-    link: 'https://www.ganticonstruction.com', 
-  },
-  {
-    name: 'Tyron Piteau Fitness',
-    description: 'Fat loss coach for middle-aged women, helping clients achieve sustainable weight loss and better health.',
-    image: '/images/tyronpiteaufitness.png',
-    link: 'http://tyron-coaching-web.vercel.app', 
-  },
-  {
-    name: 'Jackie Mitchell Physio',
-    description: 'Expert physiotherapist in North Vancouver, offering personalized treatments for pain relief and recovery.',
-    image: '/images/jackiemitchellphysio.png',
-    link: 'https://jackiemitchellphysio.com',
-  },
-];
+import { portfolio } from '@/lib/data/portfolio';
 
 export default function Portfolio() {
   return (
@@ -38,7 +18,7 @@ export default function Portfolio() {
         </p>
 
         <div className="mt-12 grid md:grid-cols-3 gap-8">
-          {portfolioItems.map((item, index) => (
+          {portfolio.map((item, index) => (
             <div key={index} className="text-center">
               <div className="relative w-full h-64 md:h-80">
                 <Image
