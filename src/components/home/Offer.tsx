@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CheckCircle } from "lucide-react";
+import { monthlyPrice } from '@/lib/constants/prices';
 
 const offerItems = [
   {
@@ -34,7 +35,7 @@ export default function Offer() {
       <div className="max-w-6xl mx-auto px-6 text-center">
         <p className="text-2xl md:text-3xl font-medium text-gray-400">What We Offer</p>
         
-        <h2 className="text-4xl md:text-5xl font-bold text-white mt-2 max-w-3xl mx-auto ">Websites starting at $0 down and $149 per month</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-white mt-2 max-w-3xl mx-auto ">Websites starting at $0 down and {monthlyPrice} per month</h2>
 
         <p className="mt-6 text-lg md:text-xl text-gray-400">
           We offer $0 down for a standard 5-page small business website. If you need more than that, we have custom pricing based on the scope of work, number of additional pages, and time involved. 12-month minimum contract. Includes design, development, hosting, unlimited edits, 24/7 support, and lifetime updates.

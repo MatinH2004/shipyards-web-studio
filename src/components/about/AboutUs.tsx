@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { monthlyPrice } from '@/lib/constants/prices';
 
 export default function About() {
   return (
@@ -71,8 +72,8 @@ export default function About() {
             thousands of dollars upfront on a new website. And the ones that did, got taken 
             advantage of and ended up with a terrible website. They either couldn&apos;t afford 
             a good website, or if they could, they didn&apos;t know who to trust. So I tweaked 
-            my business model to fit their needs. That&apos;s how I came up with my $0 down and 
-            $149 a month model—more manageable for a small business and easier on their budget.
+            my business model to fit their needs. That&apos;s how I came up with my $0 down 
+            and {monthlyPrice} a month model—more manageable for a small business and easier on their budget.
           </p>
         </div>
       </div>

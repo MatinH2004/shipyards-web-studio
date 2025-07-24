@@ -1,36 +1,6 @@
 import Link from "next/link";
 import { CheckCircle } from "lucide-react";
-
-const pricingPackages = [
-  {
-    type: "Lump Sum",
-    services: [
-      "Design & Development",
-      "SEO & Google Ranking",
-      "100/100 Page Speed",
-      "+$150 Fee Per Page After 5",
-      "+$30/mo Hosting",
-      "+$50/mo Unlimited Edits Add-on",
-    ],
-    price: "$1749",
-    extra: "+ $30/mo Hosting",
-  },
-  {
-    type: "Monthly",
-    services: [
-      "Design & Development",
-      "SEO & Google Ranking",
-      "100/100 Page Speed",
-      "Includes Hosting",
-      "$100 Fee Per Page After 5",
-      "Unlimited Edits",
-      "24/7 Support",
-      "Lifetime Updates",
-    ],
-    price: "$149",
-    extra: "Per Month",
-  },
-];
+import { pricingPackages } from "@/lib/constants/prices";
 
 export default function Pricing() {
   return (
