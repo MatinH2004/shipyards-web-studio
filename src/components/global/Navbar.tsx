@@ -16,11 +16,11 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const navItems: Array<NavItem> = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
+    // { href: "/", label: "Home" },
     { href: "/services", label: "Services" },
     { href: "/portfolio", label: "Portfolio"},
     { href: "/pricing", label: "Pricing" },
+    { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" },
   ];
 
