@@ -10,3 +10,8 @@ export type PortfolioItem = {
   link: string;
   caseStudyLink: string;
 };
+
+export type TestimonialItem = {
+  text: string;
+  author: string;
+}
