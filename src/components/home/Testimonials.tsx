@@ -13,7 +13,7 @@ export default function Testimonials() {
           What Our Clients Say
         </h2>
 
-        <blockquote className="bg-gray-900 p-6 mt-12 rounded-2xl shadow-md text-left transition-transform shadow-lg duration-300 hover:shadow-2xl hover:shadow-blue-500/50">
+        <blockquote className="bg-gray-900 p-6 mt-10 rounded-2xl shadow-md shadow-blue-500/50 border-l-4 border-blue-500 text-left italic">
           <div className="flex justify-center mb-4">
             {[...Array(5)].map((_, i) => (
               <Star key={i} size={20} className="text-yellow-500 fill-yellow-500" />
