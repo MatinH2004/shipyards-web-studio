@@ -1,4 +1,6 @@
-export const portfolio = [
+import { PortfolioItem } from "../types";
+
+export const portfolio: PortfolioItem[] = [
   {
     name: 'Jackie Mitchell Physio',
     description: 'Expert physiotherapist in North Vancouver, offering personalized treatments for pain relief and recovery.',

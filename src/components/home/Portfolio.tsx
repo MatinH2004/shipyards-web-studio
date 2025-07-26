@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { portfolio } from '@/lib/data/portfolio';
+import { PortfolioItem } from '@/lib/types';
 
 export default function Portfolio() {
   return (
@@ -18,7 +19,7 @@ export default function Portfolio() {
         </p>
 
         <div className="mt-12 grid md:grid-cols-3 gap-8">
-          {portfolio.map((item, index) => (
+          {portfolio.map((item: PortfolioItem, index: number) => (
             <div key={index} className="text-center">
               <div className="relative w-full h-64 md:h-80">
                 <Image

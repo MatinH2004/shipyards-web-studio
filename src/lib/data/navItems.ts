@@ -1,7 +1,4 @@
-type NavItem = {
-  href: string;
-  label: string;
-};
+import { NavItem } from "../types";
 
 export const navItems: Array<NavItem> = [
   { href: "/services", label: "Services" },
