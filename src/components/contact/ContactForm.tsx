@@ -6,6 +6,7 @@ import { useState } from 'react';
 export default function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
   const [reason, setReason] = useState("Book Appointment");
   const [message, setMessage] = useState('');
   const [status, setStatus] = useState('');
@@ -20,13 +21,14 @@ export default function ContactForm() {
       const response = await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-        { name, email, reason, message },
+        { name, email, phone, reason, message },
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       );
       console.log('SUCCESS!', response.status, response.text);
       setStatus('Message sent successfully!');
       setName('');
       setEmail('');
+      setPhone('');
       setReason('Book Appointment');
       setMessage('');
     } catch (err) {
@@ -68,6 +70,20 @@ export default function ContactForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+            className="w-full p-2 border border-gray-300 rounded-md text-white"
+          />
+        </div>
+
+        <div className="mb-4">
+          <label htmlFor="phone" className="block text-gray-200 font-medium">
+            Phone:
+          </label>
+          <input
+            type="tel"
+            id="phone"
+            aria-label="Phone Number"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
             className="w-full p-2 border border-gray-300 rounded-md text-white"
           />
         </div>
