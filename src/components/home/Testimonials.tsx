@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import { testimonials } from '@/lib/data/testimonials';
+import { TestimonialItem } from '@/lib/types';
 
 export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,7 +20,7 @@ export default function Testimonials() {
     );
   };
 
-  const currentTestimonial = testimonials[currentIndex];
+  const currentTestimonial: TestimonialItem = testimonials[currentIndex];
 
   return (
     <section className="pt-16 px-4 sm:px-8 lg:px-24">
