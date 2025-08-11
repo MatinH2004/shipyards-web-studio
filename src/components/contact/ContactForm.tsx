@@ -1,6 +1,5 @@
 "use client";
 
-import emailjs from '@emailjs/browser';
 import { useState } from 'react';
 
 export default function ContactForm() {
@@ -18,19 +17,36 @@ export default function ContactForm() {
     setStatus('');
 
     try {
-      const response = await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-        { name, email, phone, reason, message },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
-      );
-      console.log('SUCCESS!', response.status, response.text);
-      setStatus('Message sent successfully!');
-      setName('');
-      setEmail('');
-      setPhone('');
-      setReason('Book Appointment');
-      setMessage('');
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY!,
+          name,
+          email,
+          phone,
+          reason,
+          message,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        console.log("SUCCESS!", result);
+        setStatus('Message sent successfully!');
+        setName('');
+        setEmail('');
+        setPhone('');
+        setReason('Book Appointment');
+        setMessage('');
+      } else {
+        console.error("FAILED...", result);
+        setStatus('Failed to send message. Please try again.');
+      }
     } catch (err) {
       console.error('FAILED...', err);
       setStatus('Failed to send message. Please try again.');
